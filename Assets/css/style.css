@@ -1,0 +1,541 @@
+/*
+/*-----------------------------------------------------------
+* Author           : Murshalin Sojib
+* Created          : June 2022
+* File Description : Main css file of the template
+*------------------------------------------------------------
+*/
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+/*--------------------Strat Root--------------------*/
+:root{
+    --font-Montserrat-sans: "Montserrat", sans-serif;
+    --font-Nunito-sans: "Nunito Sans", sans-serif;
+    --text-color: #f8f9fa;
+    --text-hover-color: #e65f78;
+    --text-hover-color: rgb(232, 81, 108);
+    --animation-color: rgb(6 17 39 / var(--tw-bg-opacity))
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*--------------------Start Navbar-------------------- */
+.navbar{
+    padding-top: 20px;
+    transition: all 0.5s;
+}
+.navbar-brand img{
+    width: 100%;
+    height: 50px;
+}
+.nav-item{
+    padding: 0px 10px 0px 10px;
+}
+.nav-link{
+    color: var(--text-color);
+    font-family: var(--font-Montserrat-sans);
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+.nav-link:hover{
+    color:var(--text-hover-color);
+}
+.bg-light {
+    background-color: rgba(255,255,255,0.0) !important;
+}
+.navbar-scrolled{
+    background-color: rgb(0,0,0,0.5)!important;
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    border-color: #ffffff;
+}
+.navbar-toggler{
+    line-height: 1;
+    color: #ffffff;
+    background-color: #ffffff;
+    border: none !important;
+}
+/*--------------------End Navbar--------------------*/
+/*--------------------Start Home--------------------*/
+.home{
+    background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)), url("..//img/murshalin-sojib/Murshalin-Sojib-Home-Background-Images.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.home_content{
+    margin-top: 20%;
+    color: var(--text-color);
+    font-family: var(--font-Montserrat-sans);
+}
+.home_icon{
+   text-align: center;
+   margin-top: 100px;
+   animation: home-icon 1.3s ease-in-out infinite ;
+}
+.home_icon i{
+    font-size: 25px;
+    color: rgb(248, 249, 250);
+}
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+/*--------------------End Home--------------------*/
+/*--------------------Start About--------------------*/
+.about{
+    padding: 50px 0px 50px 0px;
+}
+.about_text{
+    padding: 0px 0px 50px 0px;
+    text-align: center;
+    font-family: var(--font-Montserrat-sans);
+    font-size: 2rem;
+    font-weight: 600;
+    color: #212529;
+}
+.about_img img{
+    border-radius: 5px;
+    width: 300px;
+    height: 500px;
+    z-index: 99;
+}
+.about_content{
+    padding: 10px 0px 40px 0px;
+}
+.about_content h5{
+    font-family: var(--font-Montserrat-sans);
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #212529;
+}
+.about_content span{
+    color: var(--text-hover-color);
+}
+.about_content p{
+    font-family: var(--font-Nunito-sans);
+    font-size: 1rem;
+    font-weight: 540;
+    color:#212529;
+}
+.about_icon{
+    display: flex;
+    gap: 15px;
+}
+.about_icon i{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    color: #212529;
+    border: 3px solid #dbdbdb;
+    border-radius: 50%;
+    padding: 7px 7px 7px 8px;
+    transition: all 0.5s;
+}
+.about_icon i:hover{
+    color: #f72a6e;
+    border-color: #f72a6e;
+}
+/*--------------------End About--------------------*/
+/*--------------------Start Services--------------------*/
+.services{
+    padding: 50px 0px 50px 50px;
+    background-color: #f8f9fa;
+}
+.services_text h4{
+    text-align: center;
+    font-family: var(--font-Montserrat-sans);
+    font-size: 2rem;
+    font-weight: 500;
+    color:#212529;
+}
+.services_text span{
+    font-weight: 700;
+}
+.services_text p{
+    text-align: center;
+    font-family: var(--font-Nunito-sans);
+    font-size: 1rem;
+    font-weight: 500;
+    color:#212529;
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+.services_contents{
+    padding: 30px 10px 10px 10px;
+    border: 2px solid #dbdbdb;
+    cursor: pointer;
+    z-index: 9999;
+    width: 350px;
+    height: 270px;
+    background-color: #f8f8f8;
+}
+.services_contents i{
+    font-size: 40px;
+    color: var(--text-hover-color);
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.services_contents h5{
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+    font-family: var(--font-Montserrat-sans);
+    font-size: 1rem;
+    font-weight: 700;
+    color: #212529;
+    text-transform: uppercase;
+}
+.services_divider{
+    width: 50px;
+    height: 2px;
+    background-color: #e65f78;
+    text-align: center;
+    display: block;
+    margin: auto;
+    transition: all 0.5s;
+}
+.services_contents:hover .services_divider{
+    width: 70px;
+}
+.services_contents p{
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+    font-family: var(--font-Nunito-sans);
+    font-size: 15px;
+    font-weight: 500;
+    color: #212529;
+}
+/*--------------------End Services--------------------*/
+/*--------------------Start Hire Me--------------------*/
+.hire-me{
+    margin: 50px 0px 50px 0px;
+    padding: 100px 0px 100px 0px;
+    text-align: center;
+}
+.hire-me-text h5{
+    font-family: var(--font-Montserrat-sans);
+    font-size: 40px;
+    font-weight: 550;
+    color:#000000;
+}
+.hire-me-b button{
+    width: 130px;
+    height: 50px;
+    padding: 5px 5px 5px 5px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    background-color: #e65f78;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: var(--font-Montserrat-sans);
+    font-size: 16px;
+    font-weight: 500;
+}
+/*--------------------End Hire Me--------------------*/
+/*--------------------Start Client--------------------*/
+.client{
+    margin: 50px 0px 50px 0px;
+    padding: 50px 0px 50px 0px;
+    background-color: rgb(248, 249, 250);
+}
+.client_text{
+    text-align: center;
+    font-family: var(--font-Montserrat-sans);
+    color: #212529;
+}
+.client_text h4{
+    padding: 0px 0px 10px 0px;
+    font-weight: 700;
+}
+.client-tx{
+    font-weight: 600;
+}
+.client-meet-icon{
+    font-size: 35px;
+    color:#e65f78;
+    text-align: center;
+    margin-top: 20px;
+}
+.client-img{
+    width: 90px !important;
+    height: 90px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+.client-img-text{
+    text-align: center;
+    margin-top: 20px;
+    font-family: var(--font-Nunito-sans);
+    font-weight: 500;
+    color:#212529;
+}
+.client-img-text h5{
+    font-weight: 700;
+    color: #000000;
+}
+/*--------------------End Client--------------------*/
+/*--------------------Start Portfolio--------------------*/
+ul{
+    list-style: none;
+}
+.filter-menu{
+    margin-bottom: 20px;
+}
+.filter-menu li{
+    font-family: var(--font-Montserrat-sans);
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 10px 18px;
+    background: #ff2770;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.filter-menu li:hover,
+.filter-menu li.current{
+    background:#f72a6e;
+}
+.filter-item li{
+    width: 50%;
+    padding: 2px;
+    float: left;
+}
+.filter-item li.active{
+    width: 50%;
+    padding: 2px;
+    transition: all 0.5s ease;
+}
+.filter-item li.delete{
+    width: 0%;
+    padding: 0;
+    transition: all 0.5s ease;
+}
+.filter-item img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.work-img{
+    width: 100%;
+    height: 500px;
+    cursor: pointer;
+    background-image: url("../img/murshalin-sojib-project-01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition:  10s;
+    overflow: hidden;
+}
+.work-2{
+    background-image: url("../img/murshalin-sojib-project-02.png");
+}
+.work-3{
+    background-image: url("../img/murshalin-sojib-project-03.png");
+}
+.work-4{
+    background-image: url("../img/murshalin-sojib-project-04.png");
+}
+.work-5{
+    background-image: url("../img/murshalin-sojib-project-05.png");
+}
+.work-6{
+    background-image: url("../img/murshalin-sojib-project-06.png");
+}
+.work-img:hover{
+    background-position: bottom;
+}
+
+/*--------------------End Portfolio--------------------*/
+/*--------------------Start Contact--------------------*/
+.Contact_main{
+    background-color: rgb(248, 249, 250);
+    margin: 100px 0px 0px 0px;
+    padding: 50px 0px 50px 0px;
+}
+.contact_detial{
+    padding: 0px 0px 50px 0px;
+}
+.contact_detial h2{
+    text-align: center;
+    font-family: var(--font-Montserrat-sans);
+    font-weight: 600;
+}
+.contact_detial h6{
+    text-align: center;
+    font-family: var(--font-Montserrat-sans);
+    font-weight: 500;
+    color: #ababab;  
+}
+.con_icon{
+    margin-top: 50px;
+}
+.con_icon i{
+    font-size: 30px;
+    color:#f80f5d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con_icon h5{
+    text-align: center;
+    font-family: var(--font-Montserrat-sans);
+    font-weight: 600;
+    padding-top: 20px;
+}
+.con_icon h6{
+    text-align: center;
+    font-family: var(--font-Montserrat-sans);
+    font-weight: 500;
+    color: #ababab;  
+}
+.contact_content{
+    border: 4px solid #dbdbdb;
+    width: 500px;
+    padding: 20px 20px 20px 20px;
+    display: block;
+    margin: auto;
+}
+.contact_content h4{
+    text-align: center;
+    font-family: var(--font-Montserrat-sans);
+    font-weight: 600;
+    color: #212529;
+}
+.contact h6{
+    font-family: var(--font-Nunito-sans);
+    font-weight: 700;
+    color: #000000;
+    margin-top: 10px;
+}
+.contact input{
+    width: 100%;
+    height: 35px;
+    padding-left: 2px;
+    border: 1px solid #dbdbdb;
+    outline: none;
+}
+.contact_text h6{
+    font-family: var(--font-Nunito-sans);
+    font-weight: 700;
+    color: #000000;
+    margin-top: 10px;
+}
+#contact_text{
+    width: 100%;
+    min-height: 100px;
+    padding-left: 2px;
+    border-color: #dbdbdb;
+    outline: none;
+}
+#contact_btn{
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 50px;
+    font-family: var(--font-Montserrat-sans);
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #f72a6e;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.5s;
+    color: #ffffff;
+}
+#contact_btn:hover{
+    color: #ffffff;
+    background-color: #f80f5d;
+}
+/*--------------------End Contact--------------------*/
+/*--------------------Start Footer--------------------*/
+.footer_main{
+    padding: 20px 0px 5px 0px;
+    background-color: #212529;
+}
+.footer_con h6{
+    font-family: var(--font-Montserrat-sans);
+    font-weight: 600;
+    color: #ababab;
+}
+.footer_con span{
+    color: #f72a6e;
+}
+.footer_icon{
+    text-align: end;
+}
+.footer_icon i{
+    font-size: 20px;
+    transition: all 0.5s;
+    padding: 8px 8px 8px 8px;
+    border-radius: 50%;
+    color:#ababab;  
+    background-color: rgba(241, 241, 241, 0.08);
+}
+.footer_icon i:hover{
+    color:#f72a6e;
+}
+/*--------------------End Footer--------------------*/
+/*--------------------Back to top Start--------------------*/
+.btn_btn_primary{
+    width: 35px;
+    height:35px;
+    background-color: #ff2770;
+    border-radius: 5px;
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    outline: none;
+    border: none;
+    display: none;
+    z-index: 100;
+    transition: all 0.3s;
+}
+.back_to_top i{
+    font-size: 18px;
+    color: white;
+    z-index: 100;
+    line-height: 30px;
+}
+.btn_btn_primary:hover{
+    background-color:  #ff2770;
+    box-shadow: 0px 0px 12.48px 0.50px #ff2770;
+}
+/*--------------------Back to top End--------------------*/
+/*--------------------loding animatino Start--------------------*/
+.preloder_main{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background-color: rgba(5, 0, 0, 0.959);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loder_con{
+    width: 20px;
+    height: 20px;
+    animation: preloder 0.8s infinite;
+    transition: all 0.8s;
+    background-color: #f80f5d;
+    border-radius: 50%;
+} 
+/*--------------------loding animatino End--------------------*/
